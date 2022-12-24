@@ -64,13 +64,30 @@ main {
     margin: auto;
 }
 
-.main .principal-title {
+.main .principal-title h1 {
     padding-top: 30px;
-    position:absolute; 
-    font-size: 25px;
+    position:relative; 
+    font-size: 50px;
     font-weight: 800;
     color: rgb(16 23 40);
+    cursor: pointer;
 }
+
+.principal-title h1::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(16 23 40);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.principal-title h1:hover::after {
+    width: 100%;
+}
+
 
 /* TENTANDO POSICIONAR IMAGENS */ 
 
@@ -127,6 +144,13 @@ main .soft-skills {
 
 
 
+
+
+h1 {
+    color: #f7f9fb;
+    font-size: 50px;
+    font-weight: 600;
+}
 
 
 

@@ -8,16 +8,19 @@
 header {
     display: flex;
     justify-content: center;
+    z-index: 1;
+
 }
 
 .header {
-    margin: auto;
-    width: 1080px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height:50px;
-
+    position: fixed;
+    z-index: 99;
+    background-color: #fff;
 }
 
 
@@ -30,12 +33,13 @@ header {
     margin: 0 10px;
     list-style: none;
     font-weight: 600;
+    
 }
 
 .menu-navigation ul li a:hover {
-    /* border-bottom: 4px solid rgb(147 64 255); */
     padding: 5px;
-    background-color: rgb(16 23 40);
+    background-color: #9f3052;
+    /* background-color: #273036; */
     color: #f7f9fb;
 }
 
@@ -45,7 +49,7 @@ header {
     border: 1px solid #fff;
     margin: 0 10px;
     text-decoration: none;
-    color: rgb(16 23 40);
+    color: #9f3052;
 
 }
 
@@ -53,56 +57,106 @@ header {
 /* INICIANDO MAIN */
 
 main {
-    /* background-color: rgb(16 23 40 / 1); */
-    background-color: #f7f9fb;
+    width: 100%;
+    height: 100vh;
+    background-color: #e2c4ae;
 }
 
 .main {
     display: flex;
+    flex-direction: column;
     width: 1080px;
-    height: calc(100vh - 50px);
+    height: 100vh;
     margin: auto;
 }
 
-.main .principal-title h1 {
-    padding-top: 30px;
-    position:relative; 
+.main .principal-title{
+    margin-top: 50px;
+    width: 1080px;
+}
+
+/* .main .principal-title h1 {
+    margin: auto;
     font-size: 50px;
     font-weight: 800;
-    color: rgb(16 23 40);
+    color: #273036;
     cursor: pointer;
+    width: 1080px;
+    color: #fa2356;
+    margin: auto;
+} */
+
+.main .principal-title h1,
+h3 {
+    color: #9f3052;
+    font-size: 80px;
 }
 
-.principal-title h1::after {
-    content: " ";
-    width: 0%;
-    height: 4px;
-    background-color: rgb(16 23 40);
+.main .principal-title h1 {
+    margin-top: 30px;
+}
+
+.main .principal-title h3 {
+    font-size: 20px;
+}
+
+.about-me {
+    height: calc(100vh - 121px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me img {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
+    width: 800px;
+    height: 800px;
 }
 
-.principal-title h1:hover::after {
-    width: 100%;
+.about-me .text-about-me {
+    z-index: 1;
+    color: #fff;
+    width: 500px;
+    height: 400px;
+}
+
+.text-about-me p:nth-child(1) {
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.text-about-me p:nth-child(4) {
+    margin-bottom: 50px;
 }
 
 
-/* TENTANDO POSICIONAR IMAGENS */ 
+
+/* 
+main {
+    background-image: url(./imagens/wave.svg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+} */
+
+/* CENTRALIZANDO UM TEXTO COM A SEÇÃO SOBRE */ 
+
+
+
+
+
+/* POSICIONAMENTO DAS IMAGENS */ 
 
 .images-center-main {
     padding: 150px 0px 150px 0px;
     display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 740px;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-}
-
-.images-center-main img {
-    width: 280px;
-    height: 280px;
+    width: 1080px;
 }
 
 .images-center-main .image1,
@@ -112,42 +166,35 @@ main {
     justify-content: center;
     align-items: center;
     font-style: italic;
-    font-weight: bold;
     font-size: 30px;
     color: #f7f9fb;
-    width: 280px;
-    height: 280px;
+    width: 180px;
+    height: 180px;
+    margin: 0px 10px 0px 10px ;
 }
 
 .image1 {
-    background-color: #0053d4;
+    background-color: rgb(228 81 38);
 }
 
 .image2 {
-    background-color: #009bff;
-    margin-top: 140px;
-    margin-left: -50px;
+    background-color: rgb(12 115 184);
 }
 
 .image3 {
-    background-color: #8fecff;
-    margin-top: 280px;
-    margin-left: -50px;
+    background-color: rgb(227 163 40);
 }
 
 
 /* PARTE DAS SOFT SKILLS */ 
 
 main .soft-skills {
-    background-color: rgb(16 23 40);
+    /* background-color: #273036; */
+    background-color: #f7f9fb;
 }
 
-
-
-
-
 h1 {
-    color: #f7f9fb;
+    color: #273036;
     font-size: 50px;
     font-weight: 600;
 }

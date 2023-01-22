@@ -39,7 +39,6 @@ header {
 .menu-navigation ul li a:hover {
     padding: 5px;
     background-color: #9f3052;
-    /* background-color: #273036; */
     color: #f7f9fb;
 }
 
@@ -75,17 +74,6 @@ main {
     width: 1080px;
 }
 
-/* .main .principal-title h1 {
-    margin: auto;
-    font-size: 50px;
-    font-weight: 800;
-    color: #273036;
-    cursor: pointer;
-    width: 1080px;
-    color: #fa2356;
-    margin: auto;
-} */
-
 .main .principal-title h1,
 h3 {
     color: #9f3052;
@@ -99,6 +87,29 @@ h3 {
 .main .principal-title h3 {
     font-size: 20px;
 }
+
+#sub-title {
+    opacity: 0%;
+}
+
+/* h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+} */
+
+/* SECTION ABOUT */ 
 
 .about-me {
     height: calc(100vh - 121px);
@@ -132,20 +143,11 @@ h3 {
     margin-bottom: 50px;
 }
 
-
-
-/* 
-main {
-    background-image: url(./imagens/wave.svg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-} */
-
-/* CENTRALIZANDO UM TEXTO COM A SEÇÃO SOBRE */ 
-
-
-
+.icones-sociais a img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
 
 
 /* POSICIONAMENTO DAS IMAGENS */ 
@@ -236,5 +238,10 @@ h1 {
 @media (max-width: 600px ) {
     .menu-navigation ul li {
         font-size: 1rem;
+        }
+
+        .about-me img {
+            width: 600px;
+            height: 600px;
         }
 }

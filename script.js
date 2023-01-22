@@ -1,6 +1,7 @@
 const title = document.querySelector('#title');
 const subTitle = document.querySelector('#sub-title');
 
+
 const typeWriter = (elemento) => {
     const textoArray = elemento.innerHTML.split('');
     textoArray.forEach((letra, i) => {
@@ -11,9 +12,20 @@ const typeWriter = (elemento) => {
     })
 }
 
-typeWriter(title);
-typeWriter(subTitle);
+const typeWriterFaster = (elemento) => {
+    const textoArray = elemento.innerHTML.split('');
+    textoArray.forEach((letra, i) => {
+        elemento.innerHTML = '';
+        setTimeout(() => {
+            elemento.innerHTML += letra;
+        }, 50 * i) 
+    })
+}
 
+typeWriter(title, setTimeout(() => {
+    subTitle.style.opacity = '100%';
+    typeWriterFaster(subTitle);
+}, 1200));
 
 
 

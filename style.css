@@ -127,6 +127,10 @@ h3 {
 
 #segundo-texto {
     align-self: flex-end;
+    text-align: center;
+}
+
+#terceiro-texto {
     text-align: right;
     background-color: #f5f5f5;
 }

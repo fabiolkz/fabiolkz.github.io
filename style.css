@@ -20,7 +20,8 @@ header {
     height:50px;
     position: fixed;
     z-index: 99;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all ease-in-out 250ms;
 }
 
 
@@ -36,22 +37,20 @@ header {
     
 }
 
+.menu-navigation ul li a {
+    padding: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #9f3052;
+    transition: all ease-in-out 250ms;
+    z-index: 99;
+}
+
 .menu-navigation ul li a:hover {
     padding: 5px;
     background-color: #9f3052;
     color: #f7f9fb;
 }
-
-
-.menu-navigation ul li a {
-    padding: 5px;
-    border: 1px solid #fff;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #9f3052;
-
-}
-
 
 /* INICIANDO MAIN */
 
@@ -77,7 +76,8 @@ main {
 .main .principal-title h1,
 h3 {
     color: #9f3052;
-    font-size: 80px;
+    font-size: 70px;
+    text-align: center;
 }
 
 .main .principal-title h1 {
@@ -86,57 +86,37 @@ h3 {
 
 .main .principal-title h3 {
     font-size: 20px;
+    margin-bottom: 80px;
 }
-
-/* h1::after {
-    content: '|';
-    margin-left: 5px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-}
-
-@keyframes pisca {
-    0%, 100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-} */
 
 /* SECTION ABOUT */ 
 
 .about-me {
-    height: calc(100vh - 121px);
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
 }
 
-.about-me img {
-    position: absolute;
-    width: 800px;
-    height: 800px;
-}
-
-.about-me .text-about-me {
-    z-index: 1;
+.about-me .text-about-me h1{
+    font-size: 40px;
     color: #fff;
-    width: 500px;
-    height: 400px;
+    opacity: 0.9;
+    color: #9f3052;
+    opacity: 0.9;
 }
 
-.text-about-me p:nth-child(1) {
-    z-index: 1;
-    color: #fff;
-    font-weight: bold;
-    font-size: 25px;
-    margin-bottom: 10px;
+.about-me .text-about-me  {
+    width: 100%;
+    font-size: 18px;
+    opacity: 0%;
+    cursor: pointer;
+    margin-bottom: 40px;
 }
 
 .text-about-me p:nth-child(4) {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .icones-sociais a img {
@@ -145,56 +125,27 @@ h3 {
     height: 40px;
 }
 
-
-/* POSICIONAMENTO DAS IMAGENS */ 
-
-.images-center-main {
-    padding: 150px 0px 150px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 1080px;
+#segundo-texto {
+    align-self: flex-end;
+    text-align: right;
+    background-color: #f5f5f5;
 }
 
-.images-center-main .image1,
-.image2,
-.image3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    font-size: 30px;
-    color: #f7f9fb;
-    width: 180px;
-    height: 180px;
-    margin: 0px 10px 0px 10px ;
-}
-
-.image1 {
-    background-color: rgb(228 81 38);
-}
-
-.image2 {
-    background-color: rgb(12 115 184);
-}
-
-.image3 {
-    background-color: rgb(227 163 40);
+#primeiro-texto, 
+#segundo-texto, 
+#terceiro-texto {
+    opacity: 0%;
+    transition: all ease-in-out 1s;
 }
 
 
 /* PARTE DAS SOFT SKILLS */ 
 
-main .soft-skills {
-    /* background-color: #273036; */
-    background-color: #f7f9fb;
-}
 
-h1 {
-    color: #273036;
-    font-size: 50px;
-    font-weight: 600;
+main .soft-skills {
+    width: 100%;
+    height: 800px;
+    background-color: #f5f5f5;
 }
 
 

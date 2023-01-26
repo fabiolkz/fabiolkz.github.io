@@ -172,7 +172,7 @@ main .soft-skills {
     }
 
     .main .principal-title h3 {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     /* SECTION ABOUT */  
@@ -188,7 +188,6 @@ main .soft-skills {
     .about-me .text-about-me h1 {
         font-size: 20px;
     }
-
 
 
 }
@@ -210,12 +209,7 @@ main .soft-skills {
 
 @media (max-width: 600px ) {
     .menu-navigation ul li {
-        font-size: 1rem;
-        }
-
-        .about-me img {
-            width: 600px;
-            height: 600px;
+        font-size: 13px;
         }
 
 }

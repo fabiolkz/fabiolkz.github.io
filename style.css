@@ -52,12 +52,23 @@ header {
     color: #f7f9fb;
 }
 
+#actived {
+    padding: 5px;
+    background-color: #9f3052;
+    color: #f7f9fb;
+    color: rgb(80, 80, 80);
+    color: #FFF;
+}
+
 /* INICIANDO MAIN */
 
 main {
     width: 100%;
     height: 100vh;
     background-color: #e2c4ae;
+    background-image: url('./imagens/background-images-for-websites-016.jpg');
+    background-position: bottom;
+    background-size: cover;
 }
 
 .main {
@@ -86,53 +97,41 @@ h3 {
 
 .main .principal-title h3 {
     font-size: 20px;
-    margin-bottom: 80px;
 }
 
 /* SECTION ABOUT */ 
 
 .about-me {
-    margin-top: 20px;
+    height: calc(100vh - 160px);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-
 }
 
-.about-me .text-about-me h1{
-    font-size: 40px;
-    color: #fff;
-    opacity: 0.9;
-    color: #9f3052;
-    opacity: 0.9;
-}
-
-.about-me .text-about-me  {
+.about-me .text-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
     width: 100%;
     font-size: 18px;
     opacity: 0%;
     cursor: pointer;
-    margin-bottom: 40px;
+    background-color: #f5f5f5;
+    margin: 20px;
 }
 
-.text-about-me p:nth-child(4) {
-    margin-bottom: 20px;
+.about-me .text-about-me h1{
+    font-size: 40px;
+    color: #9f3052;
 }
 
 .icones-sociais a img {
     position: relative;
     width: 40px;
     height: 40px;
-}
-
-#segundo-texto {
-    align-self: flex-end;
-    text-align: center;
-}
-
-#terceiro-texto {
-    text-align: right;
-    background-color: #f5f5f5;
 }
 
 #primeiro-texto, 
@@ -142,18 +141,21 @@ h3 {
     transition: all ease-in-out 1s;
 }
 
+#terceiro-texto {
+    margin-bottom: 80px;
+}
+
 
 /* PARTE DAS SOFT SKILLS */ 
 
 
 main .soft-skills {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 800px;
+    height: 600px;
     background-color: #f5f5f5;
 }
-
-
-
 
 
 

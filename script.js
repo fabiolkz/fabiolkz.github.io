@@ -42,15 +42,15 @@ const aparecerSlowly = () => {
 
     setTimeout(() => {
         primeiroTexto.style.opacity = '100%';
-    }, 2350)
+    }, 1700)
 
     setTimeout(() => {
         segundoTexto.style.opacity = '100%';
-    }, 3350)
+    }, 2700)
 
     setTimeout(() => {
         terceiroTexto.style.opacity = '100%';
-    }, 4350)
+    }, 3700)
 }
 
 aparecerSlowly();

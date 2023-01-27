@@ -5,11 +5,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: center;
     z-index: 1;
-
 }
 
 .header {
@@ -21,7 +24,6 @@ header {
     position: fixed;
     z-index: 99;
     background-color: rgba(255, 255, 255, 0.5);
-    transition: all ease-in-out 250ms;
 }
 
 
@@ -113,31 +115,43 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 180px;
     width: 100%;
     font-size: 18px;
     opacity: 0%;
     cursor: pointer;
     background-color: #f5f5f5;
     margin: 10px;
+    text-align: center;
 }
 
 .about-me .text-about-me h1{
     font-size: 40px;
     color: #9f3052;
+    transition: all ease-in-out 1s;
+}
+
+.about-me .text-about-me:hover {
+    background-color: #9f3052;
+    color: #f5f5f5;
+}
+
+.about-me .text-about-me:hover h1 {
+    color: #f5f5f5;
 }
 
 .icones-sociais a img {
+    margin-top: 5px;
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 #primeiro-texto, 
 #segundo-texto, 
 #terceiro-texto {
     opacity: 0%;
-    transition: all ease-in-out 1s;
+    transition: all ease-in-out 0.5s;
 }
 
 
@@ -191,11 +205,18 @@ main .soft-skills {
         margin: 5px;
         font-size: 0.9rem;
         text-align: center;
+        height: 120px;
+        padding: 5px;
     }
     
-
     .about-me .text-about-me h1 {
         font-size: 1.5rem;
+    }
+
+    .icones-sociais a img {
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
     }
 
 }

@@ -32,8 +32,8 @@ header {
 }
 
 .menu-navigation ul li {
-    font-size: 20px;
-    margin: 0 10px;
+    margin: 0px 8px;
+    font-size: 18px;
     list-style: none;
     font-weight: 600;
     
@@ -41,7 +41,6 @@ header {
 
 .menu-navigation ul li a {
     padding: 5px;
-    margin: 0 10px;
     text-decoration: none;
     color: #9f3052;
     transition: all ease-in-out 250ms;
@@ -158,13 +157,148 @@ h3 {
 /* PARTE DAS SOFT SKILLS */ 
 
 
-main .soft-skills {
-    display: flex;
-    align-items: center;
+.container  {
     width: 100%;
-    height: 600px;
+    height: 718px;
+    /* height: 100vh; */
     background-color: #f5f5f5;
 }
+
+.soft-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.soft-skills h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #9f3052;
+    margin-top: 80px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+}
+
+.linguagem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    border: 8px solid rgba(0 , 0 ,0 , .1);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-left-color: #9f3052;
+    transition: all ease-in-out 0.3s;
+    text-align: center;
+}
+.linguagem:hover {
+    background-color: #9f3052;
+    color: #fff;
+}
+
+.linguagem:hover a {
+    color: #fff;
+}
+
+.linguagem:not(#JS):hover::after {
+    content: '(exibir certificado)';
+    font-size: 10px;
+}
+
+#JS a:hover {
+    display: none;
+}
+
+.linguagem p {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.linguagem a {
+    text-decoration: none;
+    color: #000;
+    transition: all ease-in-out 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1200px) {
+    /* MENU */
+
+    .menu-navigation ul li {
+        font-size: 16px;
+    }
+
+    /* MAIN */
+
+    .main {
+        width: 100%;
+        height: 100vh
+    }
+
+    .main .principal-title {
+        width: auto;
+    } 
+
+    .main .principal-title h1 {
+        margin-top: 15px;
+        font-size: 50px;
+    }
+
+    .main .principal-title h3 {
+        font-size: 1rem;
+    }
+
+    /* SECTION ABOUT */  
+
+    .about-me .text-about-me {
+        width: 95%;
+        margin: 5px;
+        font-size: 1rem;
+        text-align: center;
+        height: 150px;
+        padding: 5px;
+    }
+    
+    .about-me .text-about-me h1 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+
+    .icones-sociais a img {
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
 
 
 

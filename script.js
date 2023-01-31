@@ -35,3 +35,19 @@ const aparecerSlowly = () => {
 }
 
 aparecerSlowly();
+
+/* */
+
+const trocarTexto = () => {
+    let myArray = document.querySelectorAll('.linguagem a');
+
+    console.log(myArray[2].textContet)
+
+
+    for (i = 0; i < myArray.length; i++) {
+        console.log(myArray[i].textContent)
+        myArray[i].textContent = 'Opa';
+    }
+
+}
+

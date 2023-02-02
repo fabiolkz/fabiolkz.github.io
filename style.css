@@ -325,7 +325,7 @@ main {
     /* MENU */
 
     .menu-navigation ul li {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     /* MAIN */
@@ -380,6 +380,10 @@ main {
 
     .soft-skills h1 {
         font-size: 1.8rem;
+    }
+
+    .soft-skills h3 {
+        font-size: 0.9rem;
     }
 
 

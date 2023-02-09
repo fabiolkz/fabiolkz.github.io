@@ -57,8 +57,6 @@ header {
     padding: 5px;
     background-color: #9f3052;
     color: #f7f9fb;
-    color: rgb(80, 80, 80);
-    color: #FFF;
 }
 
 /* INICIANDO MAIN */
@@ -295,6 +293,10 @@ main {
     height: 40px;
 }
 
+.texto p {
+    font-size: 0.9rem;
+}
+
 .texto input {
     margin: 10px auto;
     width: 60%;
@@ -493,11 +495,11 @@ footer {
         font-size: 1.8rem;
     }
 
-    .icones-sociais a img {
+    /* .icones-sociais a img {
         margin-top: 5px;
         width: 30px;
         height: 30px;
-    }
+    } */
 
     /* PARTE DAS SOFT SKILLS */ 
 
@@ -580,6 +582,7 @@ footer {
     .foto img:hover {
         transform: scale(1.0);
     }
+
 }
 
 
@@ -631,11 +634,11 @@ footer {
         font-size: 1.5rem;
     }
 
-    .icones-sociais a img {
+    /* .icones-sociais a img {
         margin-top: 5px;
         width: 20px;
         height: 20px;
-    }
+    } */
 
     /* SECTION SKILLS */ 
 

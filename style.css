@@ -320,14 +320,14 @@ main {
 }
 
 #email {
-    background-color: #34B7F1;
-    margin-top: 0px;
-    width: 60%;
+    background-color: #34B7F1 !important;  
+    margin-top: 0px !important;
+    width: 60% !important;
 }
 
 #email:hover {
-    background-color: #0054a6;
-    width: 80%;
+    background-color: #0054a6 !important;
+    width: 80% !important;
 }
 
 /* TERCEIRO CONTAINER, ABA MEUS PROJETOS */

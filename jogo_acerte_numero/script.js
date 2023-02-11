@@ -32,6 +32,7 @@ const numeroSorte = () => {
 
     if (numero === numeroSorteado && chances > -1) { 
         alert(`Parabens, o numero sorteado era ${numeroSorteado}`);
+        btChutar.style.display = "none";
         imagem.setAttribute('src',imagensStitch.stitchFeliz[indexRandom1]);
         inNumber.value = "";
 
@@ -51,7 +52,7 @@ const numeroSorte = () => {
 
 }
 
-let btChutar = document.querySelector('#btChutar');
+const btChutar = document.querySelector('#btChutar');
 btChutar.addEventListener('click', numeroSorte);
 
 const gerarNovoNumero = () => {
